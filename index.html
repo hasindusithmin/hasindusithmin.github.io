@@ -6,10 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="/img/1663156760981.jpeg" type="image/x-icon">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.js"></script>
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  body, html {
+    font-family: "Inconsolata", sans-serif;
+  }
 </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -42,32 +45,31 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#"><img src="/img/1663156760981.jpeg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1><b>My Portfolio</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16"></div>
-    <h4><b>My Project</b></h4>
+    <h1><b>MY PORTFOLIO</b></h1>
+    <div id="progressbar"></div>
+    <h4><b>MY PROJECTS</b></h4>
     </div>
   </header>
-  
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://via.placeholder.com/600x400.png?text=FakerAPI" alt="FakerAPI" style="width:100%" class="w3-hover-opacity">
+      <img src="https://via.placeholder.com/600x400.png/b3cde0?text=fakerapi" alt="fakerapi" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a href="https://fakerapi.deta.dev/" target="_blank">FakerAPI</a></b></p>
+        <p><b><a href="https://fakerapi.deta.dev/" target="_blank"  style="text-decoration: none;" >fakerapi</a></b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://via.placeholder.com/600x400.png?text=NewsAPI" alt="NewsAPI" style="width:100%" class="w3-hover-opacity">
+      <img src="https://via.placeholder.com/600x400.png/b3cde0?text=newsapi" alt="newsapi" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a href="https://newsapi.deta.dev/" target="_blank">NewsAPI</a></b></p>
+        <p><b><a href="https://newsapi.deta.dev/" target="_blank"  style="text-decoration: none;">newsapi</a></b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="https://via.placeholder.com/600x400.png?text=LyricsAPI" alt="LyricsAPI" style="width:100%" class="w3-hover-opacity">
+      <img src="https://via.placeholder.com/600x400.png/b3cde0?text=lyricsapi" alt="lyricsapi" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a href="https://sinhalalyrics.deta.dev/" target="_blank">LyricsAPI</a></b></p>
+        <p><b><a href="https://sinhalalyrics.deta.dev/" target="_blank"  style="text-decoration: none;">lyricsapi</a></b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
@@ -76,23 +78,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://via.placeholder.com/600x400.png?text=TradingideaAPI" alt="TradingideaAPI" style="width:100%" class="w3-hover-opacity">
+      <img src="https://via.placeholder.com/600x400.png/b3cde0?text=tradingideasapi" alt="tradingideasapi" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a href="https://tradingideas.deta.dev/" target="_blank">TradingideaAPI</a></b></p>
+        <p><b><a href="https://tradingideas.deta.dev/" target="_blank"  style="text-decoration: none;">tradingideasapi</a></b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="https://via.placeholder.com/600x400.png?text=StockCLI" alt="StockCLI" style="width:100%" class="w3-hover-opacity">
+      <img src="https://via.placeholder.com/600x400.png/b3cde0?text=stockcli" alt="stockcli" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a href="https://pypi.org/project/stockcli/" target="_blank">StockCLI</a></b></p>
+        <p><b><a href="https://pypi.org/project/stockcli/" target="_blank"  style="text-decoration: none;">stockcli</a></b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-        <img src="https://via.placeholder.com/600x400.png?text=ForexAPI" alt="ForexAPI" style="width:100%" class="w3-hover-opacity">
+        <img src="https://via.placeholder.com/600x400.png/b3cde0?text=forexapi" alt="forexapi" style="width:100%" class="w3-hover-opacity">
         <div class="w3-container w3-white">
-          <p><b><a href="https://forex-codeunity.herokuapp.com/" target="_blank">ForexAPI</a></b></p>
+          <p><b><a href="https://forex-codeunity.herokuapp.com/" target="_blank"  style="text-decoration: none;">forexapi</a></b></p>
           <p>Praesent  sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
         </div>
     </div>
@@ -101,23 +103,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- Third Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://via.placeholder.com/600x400.png?text=StockAPI" alt="StockAPI" style="width:100%" class="w3-hover-opacity">
+      <img src="https://via.placeholder.com/600x400.png/b3cde0?text=stockapi" alt="stockapi" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a href="https://stockapi.deta.dev/" target="_blank">StockAPI</a></b></p>
+        <p><b><a href="https://stockapi.deta.dev/" target="_blank"  style="text-decoration: none;">stockapi</a></b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="https://via.placeholder.com/600x400.png?text=StocksAPP" alt="StocksAPP" style="width:100%" class="w3-hover-opacity">
+      <img src="https://via.placeholder.com/600x400.png/b3cde0?text=stockapp" alt="stockapp" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a href="https://hasindusithmin.github.io/StocksAPP/" target="_blank">StocksAPP</a></b></p>
+        <p><b><a href="https://hasindusithmin.github.io/StocksAPP/" target="_blank"  style="text-decoration: none;">stockapp</a></b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-        <img src="https://via.placeholder.com/600x400.png?text=Cdlrecognizer" alt="Cdlrecognizer" style="width:100%" class="w3-hover-opacity">
+        <img src="https://via.placeholder.com/600x400.png/b3cde0?text=Cdlrecognizer" alt="Cdlrecognizer" style="width:100%" class="w3-hover-opacity">
         <div class="w3-container w3-white">
-          <p><b><a href="https://cdlrecognizer.deta.dev/" target="_blank">Cdlrecognizer</a></b></p>
+          <p><b><a href="https://cdlrecognizer.deta.dev/" target="_blank"  style="text-decoration: none;">Cdlrecognizer</a></b></p>
           <p>Praesent  sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
         </div>
     </div>
@@ -126,31 +128,33 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
    <!-- 4th Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://via.placeholder.com/600x400.png?text=SQLGenerator" alt="SQLGenerator" style="width:100%" class="w3-hover-opacity">
+      <img src="https://via.placeholder.com/600x400.png/b3cde0?text=SQLGenerator" alt="SQLGenerator" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a href="https://sqlgenerator.deta.dev/" target="_blank">SQLGenerator</a></b></p>
+        <p><b><a href="https://sqlgenerator.deta.dev/" target="_blank"  style="text-decoration: none;">SQLGenerator</a></b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://via.placeholder.com/600x400.png?text=Singwithme" alt="Singwithme" style="width:100%" class="w3-hover-opacity">
+      <img src="https://via.placeholder.com/600x400.png/b3cde0?text=Singwithme" alt="Singwithme" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a href="https://hasindusithmin.github.io/singwithme/" target="_blank">Singwithme</a></b></p>
+        <p><b><a href="https://hasindusithmin.github.io/singwithme/" target="_blank"  style="text-decoration: none;">Singwithme</a></b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="https://via.placeholder.com/600x400.png?text=Truenews" alt="TrueNews" style="width:100%" class="w3-hover-opacity">
+      <img src="https://via.placeholder.com/600x400.png/b3cde0?text=Truenews" alt="TrueNews" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
-        <p><b><a href="https://truenews.vercel.app/" target="_blank">TrueNews</a></b></p>
+        <p><b><a href="https://truenews.vercel.app/" target="_blank"  style="text-decoration: none;">Truenews</a></b></p>
         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
     </div>
   </div>
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
-    <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <h4><b>ABOUT ME</b></h4>
+    <p>
+      𝙸 𝚊𝚖 𝚊 𝚜𝚎𝚕𝚏-𝚕𝚎𝚊𝚛𝚗𝚒𝚗𝚐 𝚙𝚊𝚜𝚜𝚒𝚘𝚗𝚊𝚝𝚎.𝙸 𝚊𝚖 𝚜𝚝𝚞𝚍𝚢𝚒𝚗𝚐 𝚊𝚝 𝚝𝚑𝚎 𝙸𝚗𝚜𝚝𝚒𝚝𝚞𝚝𝚎 𝚘𝚏 𝚃𝚎𝚌𝚑𝚗𝚘𝚕𝚘𝚐𝚢 𝚄𝚗𝚒𝚟𝚎𝚛𝚜𝚒𝚝𝚢 𝙾𝚏 𝙼𝚘𝚛𝚊𝚝𝚞𝚠𝚊 (𝙽𝙳𝚃).𝙼𝚢 𝚑𝚘𝚋𝚋𝚢 𝚒𝚜 𝚌𝚛𝚎𝚊𝚝𝚒𝚗𝚐 𝙰𝙿𝙸𝚜. 𝚈𝚘𝚞 𝚌𝚊𝚗 𝚞𝚜𝚎 𝚝𝚑𝚎𝚖 𝚏𝚘𝚛 𝚢𝚘𝚞𝚛 𝚙𝚎𝚝 𝚙𝚛𝚘𝚓𝚎𝚌𝚝. 𝚅𝚒𝚜𝚒𝚝 𝚖𝚢 𝚠𝚎𝚋𝚜𝚒𝚝𝚎 𝚝𝚘 𝚜𝚎𝚎 𝚝𝚑𝚎𝚖.
+    </p>
     <hr>
     
     <h4>Technical Skills</h4>
@@ -266,7 +270,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
       <div class="w3-third w3-teal">
         <p><i class="fa fa-linkedin  w3-xxlarge w3-text-light-grey"></i></p>
-        <p><a href="https://www.linkedin.com/in/hasindu-sithmin-9a1a12209/" target="_blank">Hasindu Sithmin</a></p>
+        <p><a href="https://www.linkedin.com/in/hasindu-sithmin-9a1a12209/" target="_blank"  style="text-decoration: none;">Hasindu Sithmin</a></p>
       </div>
       <div class="w3-third w3-dark-grey">
         <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
@@ -274,7 +278,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <hr class="w3-opacity">
-    <form action="/action_page.php" target="_blank">
+    <form action="/action_page.php" target="_blank"  style="text-decoration: none;">
       <div class="w3-section">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
@@ -295,12 +299,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <footer class="w3-container w3-padding-32 w3-dark-grey">
   </footer>
   
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://pages.github.com/" title="W3.CSS" target="_blank" class="w3-hover-opacity">GitHub Pages</a></div>
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://pages.github.com/" title="W3.CSS" target="_blank"  style="text-decoration: none;" class="w3-hover-opacity">GitHub Pages</a></div>
 
 <!-- End page content -->
 </div>
 
 <script>
+  const bar = new ProgressBar.Line(document.getElementById('progressbar'), {
+    strokeWidth: 1,
+    easing: 'easeInOut',
+    duration: 5000,
+    color: '#b3cde0',
+    trailColor: '#fff',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'}
+  });
+  
+  bar.animate(1.0); 
+  
 // Script to open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
